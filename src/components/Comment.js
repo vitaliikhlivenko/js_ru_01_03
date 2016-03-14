@@ -1,14 +1,21 @@
 import React, { Component, PropTypes } from 'react'
+import CommentContent from './CommentContent'
 
 class Comment extends Component {
+    mixins: [LinkedStateMixin]
+
     static propTypes = {
-        comment: PropTypes.object
-    };
+        comment: PropTypes.object.isRequired
+    }
 
     render() {
         return (
+
             <div>
-                <p>{this.props.comment.text}</p>
+                <CommentContent
+                    text = {this.props.comment.text}
+                 />
+                 <input type="button" value={'Add'} />
             </div>
         )
     }

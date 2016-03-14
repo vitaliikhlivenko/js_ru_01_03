@@ -9,17 +9,17 @@ class Article extends Component {
     }
 
 
-    componentWillMount() {
-        console.log('---', 'going to mount');
-    }
-
-    componentDidMount() {
-        console.log('---', 'mounted to: ', this.refs.container);
-    }
-
-    componentDidUpdate() {
-        console.log('---', 'comments', findDOMNode(this.refs.comments));
-    }
+    // componentWillMount() {
+    //     console.log('---', 'going to mount');
+    // }
+    //
+    // componentDidMount() {
+    //     console.log('---', 'mounted to: ', this.refs.container);
+    // }
+    //
+    // componentDidUpdate() {
+    //     console.log('---', 'comments', findDOMNode(this.refs.comments));
+    // }
 
     render() {
         return (
