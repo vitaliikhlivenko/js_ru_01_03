@@ -1,5 +1,5 @@
 import React, {Component as ReactComponent} from 'react'
-
+//все ок, только это уже не обязательно article
 export default (Component) => {
     return class extends ReactComponent {
       state = {
